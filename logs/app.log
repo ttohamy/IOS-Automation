@@ -1,0 +1,4 @@
+2025-03-09 17:31:09.125 [main] INFO  contact_app_tests.AddContactTest - assert that share contact button appears
+2025-03-09 17:50:38.917 [main] INFO  utils.RetryAnalyzer - Retrying checkThatUserCanAddNewContact (attempt 1)
+2025-03-09 17:50:46.368 [main] INFO  utils.RetryAnalyzer - Retrying checkThatUserCanAddNewContact (attempt 2)
+2025-03-09 17:50:53.776 [main] INFO  utils.RetryAnalyzer - Retrying checkThatUserCanAddNewContact (attempt 3)
