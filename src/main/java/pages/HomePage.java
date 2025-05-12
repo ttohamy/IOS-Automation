@@ -10,7 +10,11 @@ public class HomePage extends PageBase {
         super(driver);
     }
     By activityIndicator = AppiumBy.accessibilityId("Activity Indicators");
+    By sliderButton = AppiumBy.accessibilityId("Sliders");
     public void openActivityIndicator(IOSDriver driver){
         clickElement(driver, activityIndicator);
+    }
+    public void openSliderPage(IOSDriver driver){
+        clickElement(driver,sliderButton);
     }
 }
