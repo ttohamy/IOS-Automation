@@ -3,6 +3,8 @@ package base;
 import contacts_app_pages.AddContactPage;
 import contacts_app_pages.ContactAppHomePage;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.BeforeMethod;
+import org.testng.asserts.SoftAssert;
 import pages.HomePage;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -10,11 +12,14 @@ import org.testng.annotations.BeforeTest;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.security.PublicKey;
+
 import org.apache.logging.log4j.LogManager;
 import pages.SlidingPage;
 
 public class TestBase {
     protected static IOSDriver driver ;
+    protected SoftAssert softAssert ;
     protected Logger logger = LogManager.getLogger(this);
     protected HomePage homePage ;
     protected ContactAppHomePage contactAppHomePage ;
@@ -69,5 +74,9 @@ public class TestBase {
         contactAppHomePage = new ContactAppHomePage(driver);
         addContactPage = new AddContactPage(driver);
         slidingPage = new SlidingPage(driver);
+    }
+    @BeforeMethod
+    public void beforeMethod(){
+        softAssert = new SoftAssert();
     }
 }
