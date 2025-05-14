@@ -1,10 +1,12 @@
 package base;
 
+import com.beust.ah.A;
 import contacts_app_pages.AddContactPage;
 import contacts_app_pages.ContactAppHomePage;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
+import pages.AlertsPage;
 import pages.HomePage;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -25,6 +27,7 @@ public class TestBase {
     protected ContactAppHomePage contactAppHomePage ;
     protected AddContactPage addContactPage;
     protected SlidingPage slidingPage;
+    protected AlertsPage alertsPage;
 //Simulator Capabilities
     @BeforeTest
     public void intiDriver() throws MalformedURLException {
@@ -74,6 +77,7 @@ public class TestBase {
         contactAppHomePage = new ContactAppHomePage(driver);
         addContactPage = new AddContactPage(driver);
         slidingPage = new SlidingPage(driver);
+        alertsPage = new AlertsPage(driver);
     }
     @BeforeMethod
     public void beforeMethod(){

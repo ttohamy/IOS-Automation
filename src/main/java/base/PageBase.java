@@ -1,35 +1,32 @@
 package base;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.PointerInput;
 import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.lang.reflect.Array;
+import javax.annotation.Nullable;
 import java.time.Duration;
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.TimeoutException;
 
 public class PageBase {
     protected IOSDriver driver ;
-    Logger logger = LogManager.getLogger(this);
+    Logger logger = LogManager.getLogger(getClass());
 
     public PageBase(IOSDriver driver){
         this.driver = driver;
     }
     public void waitBeforeInteract(IOSDriver driver, By locator) {
         FluentWait wait = new FluentWait(driver).withTimeout(Duration.ofSeconds(7)).pollingEvery(Duration.ofSeconds(1))
-                .ignoring(NoSuchElementException.class).ignoring(TimeoutException.class).withMessage("Element NOT Found");
+                .ignoring(NoSuchElementException.class).ignoring(TimeoutException.class).withMessage(locator+" Not Found");
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
@@ -78,6 +75,49 @@ public class PageBase {
         }catch (Exception e){
             System.out.println("Exception : can not retrieve Element Text");
             return e.getMessage();
+        }
+    }
+    public void waitAlertToBePresent(IOSDriver driver){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.alertIsPresent());
+    }
+    public void switchToAlertAndDoAction(IOSDriver driver , String action){
+        waitAlertToBePresent(driver);
+        Alert alert = driver.switchTo().alert();
+        if(action.equalsIgnoreCase("accept")){
+            alert.accept();
+        } else if(action.equalsIgnoreCase("dismiss")){
+            alert.dismiss();
+        } else {
+            throw new IllegalArgumentException("Action Must Be Accept or Dismiss");
+        }
+    }
+    public void switchToAlertAndSelectOption(IOSDriver driver ,By buttonsLocator ,int option){
+        waitAlertToBePresent(driver);
+        List<WebElement> options = driver.findElements(buttonsLocator);
+        System.out.println("all options : "+options.size());
+        try {
+            options.get(option).click();
+        }catch (IndexOutOfBoundsException e ){
+           logger.info("You are out of the index your index should be from 0 to"+(options.size()-1));
+           e.printStackTrace();
+        }
+    }
+    public void switchToAlertAndAddText(IOSDriver driver , By textAreaLocator , @Nullable By submitButtonLocator, String text ) {
+        waitAlertToBePresent(driver);
+        Alert alert = driver.switchTo().alert();
+        addTextToField(driver,textAreaLocator,text);
+        if(submitButtonLocator != null ){
+            if((driver.findElement(submitButtonLocator).isEnabled())){
+                logger.info("Submit button is enabled. Text length is accepted. PAlert will be accepted.");
+                alert.accept();
+            }else {
+                logger.info("Submit button is disabled. Text length is not accepted. Alert will be dismissed.");
+                alert.dismiss();
+            }
+        }else{
+            logger.info("No validation required. Proceeding to accept alert.");
+            alert.accept();
         }
     }
 

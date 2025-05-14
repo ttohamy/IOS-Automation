@@ -3,3 +3,68 @@
 2025-03-09 17:50:46.368 [main] INFO  utils.RetryAnalyzer - Retrying checkThatUserCanAddNewContact (attempt 2)
 2025-03-09 17:50:53.776 [main] INFO  utils.RetryAnalyzer - Retrying checkThatUserCanAddNewContact (attempt 3)
 2025-05-10 20:09:08.002 [main] INFO  contact_app_tests.AddContactTest - assert that share contact button appears
+2025-05-14 11:56:25.269 [main] INFO  pages.AlertsPage - You are out of the index your index should be from 0 to2
+2025-05-14 11:57:01.360 [main] INFO  pages.AlertsPage - You are out of the index your index should be from 0 to2
+2025-05-14 11:57:42.904 [main] INFO  pages.AlertsPage - You are out of the index your index should be from 0 to2
+2025-05-14 11:57:42.907 [main] ERROR pages.AlertsPage - [Ljava.lang.StackTraceElement;@4cfbaf4
+2025-05-14 11:58:07.388 [main] INFO  pages.AlertsPage - You are out of the index your index should be from 0 to2
+2025-05-14 11:58:07.390 [main] ERROR pages.AlertsPage - Index 3 out of bounds for length 3
+2025-05-14 11:59:16.855 [main] INFO  pages.AlertsPage - You are out of the index your index should be from 0 to2
+2025-05-14 11:59:16.857 [main] ERROR pages.AlertsPage - Index 3 out of bounds for length 3
+2025-05-14 12:01:03.765 [main] INFO  pages.AlertsPage - You are out of the index your index should be from 0 to2
+2025-05-14 12:21:48.576 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 12:21:52.333 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 12:23:07.381 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 12:23:10.998 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 12:26:35.537 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 12:30:24.831 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 12:30:28.999 [main] INFO  pages.AlertsPage - Text length is accepted! 
+2025-05-14 12:30:56.063 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 12:31:00.270 [main] INFO  pages.AlertsPage - Text length is accepted! 
+2025-05-14 12:34:28.307 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 12:34:32.854 [main] INFO  pages.AlertsPage -  driver.findElement(submitButtonLocator).isEnabled()true
+2025-05-14 12:34:32.855 [main] INFO  pages.AlertsPage - Text length is accepted! 
+2025-05-14 12:37:26.736 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 12:37:31.273 [main] INFO  pages.AlertsPage -  driver.findElement(submitButtonLocator).isEnabled()true
+2025-05-14 12:37:31.273 [main] INFO  pages.AlertsPage - Text length is accepted! 
+2025-05-14 12:37:54.645 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 12:37:59.157 [main] INFO  pages.AlertsPage -  driver.findElement(submitButtonLocator).isEnabled()false
+2025-05-14 12:37:59.158 [main] INFO  pages.AlertsPage - Text length is accepted! 
+2025-05-14 12:38:24.192 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 12:38:28.721 [main] INFO  pages.AlertsPage -  driver.findElement(submitButtonLocator).isEnabled()false
+2025-05-14 12:38:28.722 [main] INFO  pages.AlertsPage - Text length is accepted! 
+2025-05-14 12:41:18.933 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 12:41:23.379 [main] INFO  pages.AlertsPage -  driver.findElement(submitButtonLocator).isEnabled()[[IOSDriver:  on IOS (ae057039-9b39-4f25-b2e9-e3716b251af8)] -> -ios class chain: **/XCUIElementTypeAlert[`name == "A Short Title Is Best"`]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]]
+2025-05-14 12:41:23.381 [main] INFO  pages.AlertsPage - ExpectedConditions.elementToBeClickable(submitButtonLocator) element to be clickable: AppiumBy.iOSClassChain: **/XCUIElementTypeAlert[`name == "A Short Title Is Best"`]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]
+2025-05-14 12:41:23.381 [main] INFO  pages.AlertsPage - Text length is accepted! 
+2025-05-14 12:57:45.088 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 13:01:23.322 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 13:03:09.989 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 13:03:14.537 [main] INFO  pages.AlertsPage - false
+2025-05-14 13:03:14.823 [main] INFO  pages.AlertsPage -  driver.findElement(submitButtonLocator).isEnabled()[[IOSDriver:  on IOS (d57017b1-9dbb-4145-9f8f-85e54aff1eb3)] -> -ios class chain: **/XCUIElementTypeAlert[`name == "A Short Title Is Best"`]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]]
+2025-05-14 13:03:14.824 [main] INFO  pages.AlertsPage - Text length is accepted! 
+2025-05-14 13:39:27.632 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 13:39:31.795 [main] INFO  pages.AlertsPage - Text length is not accepted! 
+2025-05-14 13:41:23.263 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 13:41:27.508 [main] INFO  pages.AlertsPage - Text length is not accepted! 
+2025-05-14 13:42:43.967 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 13:42:48.115 [main] INFO  pages.AlertsPage - element is accessible : false
+2025-05-14 13:42:48.461 [main] INFO  pages.AlertsPage - Text length is not accepted! 
+2025-05-14 13:44:21.346 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 13:44:26.482 [main] INFO  pages.AlertsPage - element is accessible : false
+2025-05-14 13:44:26.824 [main] INFO  pages.AlertsPage - Text length is not accepted! 
+2025-05-14 13:53:59.475 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 13:54:04.507 [main] INFO  pages.AlertsPage - element is enabled : true
+2025-05-14 13:54:04.865 [main] INFO  pages.AlertsPage - element is enabled : true
+2025-05-14 13:54:04.865 [main] INFO  pages.AlertsPage - Text length is accepted! 
+2025-05-14 13:54:40.442 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 13:54:44.432 [main] INFO  pages.AlertsPage - element is enabled : false
+2025-05-14 13:54:44.607 [main] INFO  pages.AlertsPage - Text length is not accepted! 
+2025-05-14 14:11:51.342 [main] INFO  pages.AlertsPage - No validation on text length 
+2025-05-14 14:11:55.449 [main] INFO  pages.AlertsPage - Text length is not accepted and the alert will be dismissed 
+2025-05-14 14:20:06.899 [main] INFO  pages.AlertsPage - No validation required. Proceeding to accept alert.
+2025-05-14 14:20:10.970 [main] INFO  pages.AlertsPage - Submit button is disabled. Text length is not accepted. Alert will be dismissed.
+2025-05-14 14:20:45.226 [main] INFO  pages.AlertsPage - No validation required. Proceeding to accept alert.
+2025-05-14 14:20:49.179 [main] INFO  pages.AlertsPage - Submit button is enabled. Text length is accepted.
+2025-05-14 14:23:46.557 [main] INFO  pages.AlertsPage - No validation required. Proceeding to accept alert.
+2025-05-14 14:23:50.532 [main] INFO  pages.AlertsPage - Submit button is enabled. Text length is accepted. PAlert will be accepted.
