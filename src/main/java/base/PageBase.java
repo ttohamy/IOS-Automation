@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.PointerInput;
 import org.openqa.selenium.interactions.Sequence;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,7 +15,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import javax.annotation.Nullable;
 import java.time.Duration;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeoutException;
 
 public class PageBase {
@@ -119,6 +122,14 @@ public class PageBase {
             logger.info("No validation required. Proceeding to accept alert.");
             alert.accept();
         }
+    }
+    public void scrollWheel(IOSDriver driver , By elementLocator ){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        Map<String, Object> params = new HashMap<>();
+        params.put("order", "next"); // or "previous" --> Direction to scroll
+        params.put("offset", 0.1);  // try with 0.1 or 0.2 if needed Scroll strength small = finer control
+        params.put("element", ((RemoteWebElement) driver.findElement(elementLocator)).getId()); // assuming 0 is the hour
+        js.executeScript("mobile: selectPickerWheelValue", params);
     }
 
 }

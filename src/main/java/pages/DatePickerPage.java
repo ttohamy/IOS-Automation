@@ -8,7 +8,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 
-import javax.swing.*;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,6 +28,7 @@ public class DatePickerPage extends PageBase {
     public DatePickerPage(IOSDriver driver) {
         super(driver);
     }
+
     public void openDatePicker(IOSDriver driver){
         clickElement(driver,datePickerButton);
     }
@@ -51,19 +53,34 @@ public class DatePickerPage extends PageBase {
         dismissDatePickerPopup(driver);
 
     }
-    public void selectSpecificTime(IOSDriver driver){
+    public void selectSpecificTime(IOSDriver driver) throws InterruptedException {
         openTimePicker(driver);
         List<WebElement> timeWheels = driver.findElements(wheels);
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        Map<String, Object> params = new HashMap<>();
-        params.put("order", "next"); // or "previous" --> Direction to scroll
-        params.put("offset", 0.1);  // try with 0.1 or 0.2 if needed Scroll strength small = finer control
-        params.put("element", ((RemoteWebElement) timeWheels.get(0)).getId()); // assuming 0 is the hour
-        js.executeScript("mobile: selectPickerWheelValue", params);
-        timeWheels.get(2).sendKeys("PM");
-        timeWheels.get(1).sendKeys("56");
+        scrollWheel(driver,hoursWheel);
+        int expectedMinutes = Integer.valueOf(getMinutesInSpecificFormat());
+        //As time have only even number here we check if the number is odd will add to it 1
+        if(expectedMinutes%2!=0){
+            System.out.println("Minutes is odd " + expectedMinutes);
+            expectedMinutes = expectedMinutes +1;
+            System.out.println("Minutes Now should be even "+expectedMinutes);
+        }
+        timeWheels.get(2).sendKeys(getLocalTimeAMPMFormat());
+        Thread.sleep(500);
+        timeWheels.get(1).sendKeys(String.valueOf(expectedMinutes));
         dismissDatePickerPopup(driver);
     }
+    public String getLocalTimeAMPMFormat(){
+        LocalTime localTime = LocalTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("a");
+        return localTime.format(formatter);
+    }
+    public String getMinutesInSpecificFormat(){
+        LocalTime localTime = LocalTime.now();
+        DateTimeFormatter minutesFormater = DateTimeFormatter.ofPattern("mm");
+        LocalTime minutesAfterTime = localTime.plusMinutes(3);
+        return minutesAfterTime.format(minutesFormater);
+    }
+
     public void dismissDatePickerPopup(IOSDriver driver){
         clickElement(driver,dismissDatePickerPopupButton);
     }
