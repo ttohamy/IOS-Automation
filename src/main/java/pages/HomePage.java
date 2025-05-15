@@ -12,6 +12,7 @@ public class HomePage extends PageBase {
     By activityIndicator = AppiumBy.accessibilityId("Activity Indicators");
     By sliderButton = AppiumBy.accessibilityId("Sliders");
     By alertsButton = AppiumBy.accessibilityId("Alert Views");
+    By datePickerButton = AppiumBy.accessibilityId("Date Picker");
     public void openActivityIndicator(IOSDriver driver){
         clickElement(driver, activityIndicator);
     }
@@ -21,4 +22,8 @@ public class HomePage extends PageBase {
     public void openAlertsPage(IOSDriver driver){
         clickElement(driver,alertsButton);
     }
+    public void openDatePickerPage(IOSDriver driver){
+        clickElement(driver,datePickerButton);
+    }
+
 }

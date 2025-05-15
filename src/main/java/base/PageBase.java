@@ -19,7 +19,7 @@ import java.util.concurrent.TimeoutException;
 
 public class PageBase {
     protected IOSDriver driver ;
-    Logger logger = LogManager.getLogger(getClass());
+    public Logger logger = LogManager.getLogger(getClass());
 
     public PageBase(IOSDriver driver){
         this.driver = driver;

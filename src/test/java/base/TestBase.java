@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
 import pages.AlertsPage;
+import pages.DatePickerPage;
 import pages.HomePage;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -28,6 +29,7 @@ public class TestBase {
     protected AddContactPage addContactPage;
     protected SlidingPage slidingPage;
     protected AlertsPage alertsPage;
+    protected DatePickerPage  datePickerPage;
 //Simulator Capabilities
     @BeforeTest
     public void intiDriver() throws MalformedURLException {
@@ -78,6 +80,7 @@ public class TestBase {
         addContactPage = new AddContactPage(driver);
         slidingPage = new SlidingPage(driver);
         alertsPage = new AlertsPage(driver);
+        datePickerPage = new DatePickerPage(driver);
     }
     @BeforeMethod
     public void beforeMethod(){

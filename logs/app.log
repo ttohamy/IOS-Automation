@@ -68,3 +68,446 @@
 2025-05-14 14:20:49.179 [main] INFO  pages.AlertsPage - Submit button is enabled. Text length is accepted.
 2025-05-14 14:23:46.557 [main] INFO  pages.AlertsPage - No validation required. Proceeding to accept alert.
 2025-05-14 14:23:50.532 [main] INFO  pages.AlertsPage - Submit button is enabled. Text length is accepted. PAlert will be accepted.
+2025-05-14 16:31:48.218 [main] INFO  pages.DatePickerPage - static text size : 34
+2025-05-14 16:38:02.942 [main] INFO  pages.DatePickerPage - static text size : 34
+2025-05-14 16:38:04.255 [main] INFO  pages.DatePickerPage - Date Picker
+2025-05-14 16:38:04.294 [main] INFO  pages.DatePickerPage - 14 May 2025 at 4:38 PM
+2025-05-14 16:38:04.332 [main] INFO  pages.DatePickerPage - May 2025
+2025-05-14 16:38:04.371 [main] INFO  pages.DatePickerPage - 1
+2025-05-14 16:38:04.408 [main] INFO  pages.DatePickerPage - 2
+2025-05-14 16:38:04.450 [main] INFO  pages.DatePickerPage - 3
+2025-05-14 16:38:04.489 [main] INFO  pages.DatePickerPage - 4
+2025-05-14 16:38:04.527 [main] INFO  pages.DatePickerPage - 5
+2025-05-14 16:38:04.565 [main] INFO  pages.DatePickerPage - 6
+2025-05-14 16:38:04.604 [main] INFO  pages.DatePickerPage - 7
+2025-05-14 16:38:04.641 [main] INFO  pages.DatePickerPage - 8
+2025-05-14 16:38:04.679 [main] INFO  pages.DatePickerPage - 9
+2025-05-14 16:38:04.717 [main] INFO  pages.DatePickerPage - 10
+2025-05-14 16:38:04.756 [main] INFO  pages.DatePickerPage - 11
+2025-05-14 16:38:04.796 [main] INFO  pages.DatePickerPage - 12
+2025-05-14 16:38:04.835 [main] INFO  pages.DatePickerPage - 13
+2025-05-14 16:38:04.876 [main] INFO  pages.DatePickerPage - 14
+2025-05-14 16:38:04.916 [main] INFO  pages.DatePickerPage - 15
+2025-05-14 16:38:04.954 [main] INFO  pages.DatePickerPage - 16
+2025-05-14 16:38:04.992 [main] INFO  pages.DatePickerPage - 17
+2025-05-14 16:38:05.031 [main] INFO  pages.DatePickerPage - 18
+2025-05-14 16:38:05.071 [main] INFO  pages.DatePickerPage - 19
+2025-05-14 16:38:05.109 [main] INFO  pages.DatePickerPage - 20
+2025-05-14 16:38:05.147 [main] INFO  pages.DatePickerPage - 21
+2025-05-14 16:38:05.184 [main] INFO  pages.DatePickerPage - 22
+2025-05-14 16:38:05.224 [main] INFO  pages.DatePickerPage - 23
+2025-05-14 16:38:05.262 [main] INFO  pages.DatePickerPage - 24
+2025-05-14 16:38:05.299 [main] INFO  pages.DatePickerPage - 25
+2025-05-14 16:38:05.337 [main] INFO  pages.DatePickerPage - 26
+2025-05-14 16:38:05.376 [main] INFO  pages.DatePickerPage - 27
+2025-05-14 16:38:05.416 [main] INFO  pages.DatePickerPage - 28
+2025-05-14 16:38:05.456 [main] INFO  pages.DatePickerPage - 29
+2025-05-14 16:38:05.494 [main] INFO  pages.DatePickerPage - 30
+2025-05-14 16:38:05.532 [main] INFO  pages.DatePickerPage - 31
+2025-05-14 17:20:37.044 [main] INFO  pages.DatePickerPage - 3
+2025-05-14 17:21:11.734 [main] INFO  pages.DatePickerPage - size : 3
+2025-05-14 17:33:53.016 [main] INFO  pages.DatePickerPage - dismiss popup
+2025-05-14 17:33:53.057 [main] INFO  pages.DatePickerPage - UIKitCatalog
+2025-05-14 17:33:53.096 [main] INFO  pages.DatePickerPage - 14 May 2025
+2025-05-14 17:33:53.136 [main] INFO  pages.DatePickerPage - 5:32 PM
+2025-05-14 17:33:53.175 [main] INFO  pages.DatePickerPage - May 2025
+2025-05-14 17:33:53.215 [main] INFO  pages.DatePickerPage - Previous Month
+2025-05-14 17:33:53.255 [main] INFO  pages.DatePickerPage - Next Month
+2025-05-14 17:33:53.293 [main] INFO  pages.DatePickerPage - May 2025
+2025-05-14 17:33:53.332 [main] INFO  pages.DatePickerPage - Thursday, 1 May
+2025-05-14 17:33:53.371 [main] INFO  pages.DatePickerPage - Friday, 2 May
+2025-05-14 17:33:53.409 [main] INFO  pages.DatePickerPage - Saturday, 3 May
+2025-05-14 17:33:53.448 [main] INFO  pages.DatePickerPage - Sunday, 4 May
+2025-05-14 17:33:53.487 [main] INFO  pages.DatePickerPage - Monday, 5 May
+2025-05-14 17:33:53.524 [main] INFO  pages.DatePickerPage - Tuesday, 6 May
+2025-05-14 17:33:53.562 [main] INFO  pages.DatePickerPage - Wednesday, 7 May
+2025-05-14 17:33:53.599 [main] INFO  pages.DatePickerPage - Thursday, 8 May
+2025-05-14 17:33:53.638 [main] INFO  pages.DatePickerPage - Friday, 9 May
+2025-05-14 17:33:53.676 [main] INFO  pages.DatePickerPage - Saturday, 10 May
+2025-05-14 17:33:53.714 [main] INFO  pages.DatePickerPage - Sunday, 11 May
+2025-05-14 17:33:53.753 [main] INFO  pages.DatePickerPage - Monday, 12 May
+2025-05-14 17:33:53.791 [main] INFO  pages.DatePickerPage - Tuesday, 13 May
+2025-05-14 17:33:53.833 [main] INFO  pages.DatePickerPage - 1
+2025-05-14 17:33:53.871 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-14 17:33:53.910 [main] INFO  pages.DatePickerPage - Friday, 16 May
+2025-05-14 17:33:53.948 [main] INFO  pages.DatePickerPage - Saturday, 17 May
+2025-05-14 17:33:53.987 [main] INFO  pages.DatePickerPage - Sunday, 18 May
+2025-05-14 17:33:54.027 [main] INFO  pages.DatePickerPage - Monday, 19 May
+2025-05-14 17:33:54.067 [main] INFO  pages.DatePickerPage - Tuesday, 20 May
+2025-05-14 17:33:54.106 [main] INFO  pages.DatePickerPage - Wednesday, 21 May
+2025-05-14 17:33:54.144 [main] INFO  pages.DatePickerPage - Thursday, 22 May
+2025-05-14 17:33:54.183 [main] INFO  pages.DatePickerPage - Friday, 23 May
+2025-05-14 17:33:54.222 [main] INFO  pages.DatePickerPage - Saturday, 24 May
+2025-05-14 17:33:54.259 [main] INFO  pages.DatePickerPage - Sunday, 25 May
+2025-05-14 17:33:54.297 [main] INFO  pages.DatePickerPage - Monday, 26 May
+2025-05-14 17:33:54.336 [main] INFO  pages.DatePickerPage - Tuesday, 27 May
+2025-05-14 17:33:54.374 [main] INFO  pages.DatePickerPage - Wednesday, 28 May
+2025-05-14 17:33:54.413 [main] INFO  pages.DatePickerPage - Thursday, 29 May
+2025-05-14 17:33:54.452 [main] INFO  pages.DatePickerPage - Friday, 30 May
+2025-05-14 17:33:54.490 [main] INFO  pages.DatePickerPage - Saturday, 31 May
+2025-05-14 17:35:16.125 [main] INFO  pages.DatePickerPage - dismiss popup
+2025-05-14 17:35:16.165 [main] INFO  pages.DatePickerPage - UIKitCatalog
+2025-05-14 17:35:16.202 [main] INFO  pages.DatePickerPage - 14 May 2025
+2025-05-14 17:35:16.242 [main] INFO  pages.DatePickerPage - 5:34 PM
+2025-05-14 17:35:16.283 [main] INFO  pages.DatePickerPage - May 2025
+2025-05-14 17:35:16.322 [main] INFO  pages.DatePickerPage - Previous Month
+2025-05-14 17:35:16.362 [main] INFO  pages.DatePickerPage - Next Month
+2025-05-14 17:35:16.401 [main] INFO  pages.DatePickerPage - May 2025
+2025-05-14 17:35:16.440 [main] INFO  pages.DatePickerPage - Thursday, 1 May
+2025-05-14 17:35:16.480 [main] INFO  pages.DatePickerPage - Friday, 2 May
+2025-05-14 17:35:16.521 [main] INFO  pages.DatePickerPage - Saturday, 3 May
+2025-05-14 17:35:16.561 [main] INFO  pages.DatePickerPage - Sunday, 4 May
+2025-05-14 17:35:16.600 [main] INFO  pages.DatePickerPage - Monday, 5 May
+2025-05-14 17:35:16.638 [main] INFO  pages.DatePickerPage - Tuesday, 6 May
+2025-05-14 17:35:16.676 [main] INFO  pages.DatePickerPage - Wednesday, 7 May
+2025-05-14 17:35:16.715 [main] INFO  pages.DatePickerPage - Thursday, 8 May
+2025-05-14 17:35:16.754 [main] INFO  pages.DatePickerPage - Friday, 9 May
+2025-05-14 17:35:16.794 [main] INFO  pages.DatePickerPage - Saturday, 10 May
+2025-05-14 17:35:16.833 [main] INFO  pages.DatePickerPage - Sunday, 11 May
+2025-05-14 17:35:16.873 [main] INFO  pages.DatePickerPage - Monday, 12 May
+2025-05-14 17:35:16.911 [main] INFO  pages.DatePickerPage - Tuesday, 13 May
+2025-05-14 17:35:16.951 [main] INFO  pages.DatePickerPage - 1
+2025-05-14 17:35:16.994 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-14 17:35:17.034 [main] INFO  pages.DatePickerPage - Friday, 16 May
+2025-05-14 17:35:17.073 [main] INFO  pages.DatePickerPage - Saturday, 17 May
+2025-05-14 17:35:17.112 [main] INFO  pages.DatePickerPage - Sunday, 18 May
+2025-05-14 17:35:17.151 [main] INFO  pages.DatePickerPage - Monday, 19 May
+2025-05-14 17:35:17.191 [main] INFO  pages.DatePickerPage - Tuesday, 20 May
+2025-05-14 17:35:17.233 [main] INFO  pages.DatePickerPage - Wednesday, 21 May
+2025-05-14 17:35:17.272 [main] INFO  pages.DatePickerPage - Thursday, 22 May
+2025-05-14 17:35:17.310 [main] INFO  pages.DatePickerPage - Friday, 23 May
+2025-05-14 17:35:17.348 [main] INFO  pages.DatePickerPage - Saturday, 24 May
+2025-05-14 17:35:17.387 [main] INFO  pages.DatePickerPage - Sunday, 25 May
+2025-05-14 17:35:17.425 [main] INFO  pages.DatePickerPage - Monday, 26 May
+2025-05-14 17:35:17.464 [main] INFO  pages.DatePickerPage - Tuesday, 27 May
+2025-05-14 17:35:17.503 [main] INFO  pages.DatePickerPage - Wednesday, 28 May
+2025-05-14 17:35:17.540 [main] INFO  pages.DatePickerPage - Thursday, 29 May
+2025-05-14 17:35:17.580 [main] INFO  pages.DatePickerPage - Friday, 30 May
+2025-05-14 17:35:17.618 [main] INFO  pages.DatePickerPage - Saturday, 31 May
+2025-05-14 17:35:17.619 [main] INFO  pages.DatePickerPage - 39
+2025-05-14 17:39:13.694 [main] INFO  pages.DatePickerPage - 39
+2025-05-14 17:48:06.609 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:20.972 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:21.052 [main] INFO  pages.DatePickerPage - Hello I am accessible : dismiss popup
+2025-05-14 17:50:21.094 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:21.176 [main] INFO  pages.DatePickerPage - Hello I am accessible : UIKitCatalog
+2025-05-14 17:50:21.221 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:21.304 [main] INFO  pages.DatePickerPage - Hello I am accessible : 14 May 2025
+2025-05-14 17:50:21.351 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:21.436 [main] INFO  pages.DatePickerPage - Hello I am accessible : 5:50 PM
+2025-05-14 17:50:21.482 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:21.566 [main] INFO  pages.DatePickerPage - Hello I am accessible : May 2025
+2025-05-14 17:50:21.603 [main] INFO  pages.DatePickerPage - Hello I am accessible : false
+2025-05-14 17:50:21.678 [main] INFO  pages.DatePickerPage - Hello I am accessible : false
+2025-05-14 17:50:21.752 [main] INFO  pages.DatePickerPage - Hello I am accessible : false
+2025-05-14 17:50:21.836 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:21.922 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 1 May
+2025-05-14 17:50:21.966 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:22.051 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 2 May
+2025-05-14 17:50:22.095 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:22.180 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 3 May
+2025-05-14 17:50:22.227 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:22.311 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 4 May
+2025-05-14 17:50:22.359 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:22.445 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 5 May
+2025-05-14 17:50:22.489 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:22.575 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 6 May
+2025-05-14 17:50:22.618 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:22.701 [main] INFO  pages.DatePickerPage - Hello I am accessible : Wednesday, 7 May
+2025-05-14 17:50:22.745 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:22.827 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 8 May
+2025-05-14 17:50:22.871 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:22.952 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 9 May
+2025-05-14 17:50:22.996 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:23.076 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 10 May
+2025-05-14 17:50:23.121 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:23.204 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 11 May
+2025-05-14 17:50:23.247 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:23.329 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 12 May
+2025-05-14 17:50:23.372 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:23.455 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 13 May
+2025-05-14 17:50:23.499 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:23.580 [main] INFO  pages.DatePickerPage - Hello I am accessible : 1
+2025-05-14 17:50:23.623 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:23.708 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 15 May
+2025-05-14 17:50:23.752 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:23.836 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 16 May
+2025-05-14 17:50:23.880 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:23.964 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 17 May
+2025-05-14 17:50:24.008 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:24.092 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 18 May
+2025-05-14 17:50:24.133 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:24.215 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 19 May
+2025-05-14 17:50:24.258 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:24.339 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 20 May
+2025-05-14 17:50:24.381 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:24.465 [main] INFO  pages.DatePickerPage - Hello I am accessible : Wednesday, 21 May
+2025-05-14 17:50:24.508 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:24.589 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 22 May
+2025-05-14 17:50:24.632 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:24.713 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 23 May
+2025-05-14 17:50:24.756 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:24.840 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 24 May
+2025-05-14 17:50:24.884 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:24.968 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 25 May
+2025-05-14 17:50:25.011 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:25.095 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 26 May
+2025-05-14 17:50:25.138 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:25.219 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 27 May
+2025-05-14 17:50:25.263 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:25.344 [main] INFO  pages.DatePickerPage - Hello I am accessible : Wednesday, 28 May
+2025-05-14 17:50:25.388 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:25.471 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 29 May
+2025-05-14 17:50:25.513 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:25.597 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 30 May
+2025-05-14 17:50:25.640 [main] INFO  pages.DatePickerPage - Hello I am accessible : true
+2025-05-14 17:50:25.722 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 31 May
+2025-05-14 17:51:11.891 [main] INFO  pages.DatePickerPage - Hello I am accessible : dismiss popup
+2025-05-14 17:51:11.975 [main] INFO  pages.DatePickerPage - Hello I am accessible : UIKitCatalog
+2025-05-14 17:51:12.061 [main] INFO  pages.DatePickerPage - Hello I am accessible : 14 May 2025
+2025-05-14 17:51:12.148 [main] INFO  pages.DatePickerPage - Hello I am accessible : 5:50 PM
+2025-05-14 17:51:12.235 [main] INFO  pages.DatePickerPage - Hello I am accessible : May 2025
+2025-05-14 17:51:12.457 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 1 May
+2025-05-14 17:51:12.540 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 2 May
+2025-05-14 17:51:12.628 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 3 May
+2025-05-14 17:51:12.710 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 4 May
+2025-05-14 17:51:12.800 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 5 May
+2025-05-14 17:51:12.890 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 6 May
+2025-05-14 17:51:12.976 [main] INFO  pages.DatePickerPage - Hello I am accessible : Wednesday, 7 May
+2025-05-14 17:51:13.063 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 8 May
+2025-05-14 17:51:13.149 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 9 May
+2025-05-14 17:51:13.239 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 10 May
+2025-05-14 17:51:13.332 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 11 May
+2025-05-14 17:51:13.420 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 12 May
+2025-05-14 17:51:13.509 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 13 May
+2025-05-14 17:51:13.593 [main] INFO  pages.DatePickerPage - Hello I am accessible : 1
+2025-05-14 17:51:13.678 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 15 May
+2025-05-14 17:51:13.763 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 16 May
+2025-05-14 17:51:13.849 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 17 May
+2025-05-14 17:51:13.934 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 18 May
+2025-05-14 17:51:14.021 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 19 May
+2025-05-14 17:51:14.106 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 20 May
+2025-05-14 17:51:14.191 [main] INFO  pages.DatePickerPage - Hello I am accessible : Wednesday, 21 May
+2025-05-14 17:51:14.277 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 22 May
+2025-05-14 17:51:14.364 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 23 May
+2025-05-14 17:51:14.451 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 24 May
+2025-05-14 17:51:14.537 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 25 May
+2025-05-14 17:51:14.626 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 26 May
+2025-05-14 17:51:14.717 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 27 May
+2025-05-14 17:51:14.808 [main] INFO  pages.DatePickerPage - Hello I am accessible : Wednesday, 28 May
+2025-05-14 17:51:14.897 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 29 May
+2025-05-14 17:51:14.986 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 30 May
+2025-05-14 17:51:15.070 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 31 May
+2025-05-14 17:51:51.747 [main] INFO  pages.DatePickerPage - Hello I am accessible : dismiss popup
+2025-05-14 17:51:51.832 [main] INFO  pages.DatePickerPage - Hello I am accessible : UIKitCatalog
+2025-05-14 17:51:51.916 [main] INFO  pages.DatePickerPage - Hello I am accessible : 14 May 2025
+2025-05-14 17:51:52.001 [main] INFO  pages.DatePickerPage - Hello I am accessible : 5:50 PM
+2025-05-14 17:51:52.086 [main] INFO  pages.DatePickerPage - Hello I am accessible : May 2025
+2025-05-14 17:51:52.283 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 1 May
+2025-05-14 17:51:52.366 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 2 May
+2025-05-14 17:51:52.450 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 3 May
+2025-05-14 17:51:52.535 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 4 May
+2025-05-14 17:51:52.618 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 5 May
+2025-05-14 17:51:52.701 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 6 May
+2025-05-14 17:51:52.788 [main] INFO  pages.DatePickerPage - Hello I am accessible : Wednesday, 7 May
+2025-05-14 17:51:52.874 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 8 May
+2025-05-14 17:51:52.958 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 9 May
+2025-05-14 17:51:53.042 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 10 May
+2025-05-14 17:51:53.124 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 11 May
+2025-05-14 17:51:53.212 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 12 May
+2025-05-14 17:51:53.296 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 13 May
+2025-05-14 17:51:53.378 [main] INFO  pages.DatePickerPage - Hello I am accessible : 1
+2025-05-14 17:51:53.463 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 15 May
+2025-05-14 17:51:53.549 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 16 May
+2025-05-14 17:51:53.635 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 17 May
+2025-05-14 17:51:53.721 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 18 May
+2025-05-14 17:51:53.804 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 19 May
+2025-05-14 17:51:53.885 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 20 May
+2025-05-14 17:51:53.968 [main] INFO  pages.DatePickerPage - Hello I am accessible : Wednesday, 21 May
+2025-05-14 17:51:54.051 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 22 May
+2025-05-14 17:51:54.134 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 23 May
+2025-05-14 17:51:54.220 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 24 May
+2025-05-14 17:51:54.305 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 25 May
+2025-05-14 17:51:54.387 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 26 May
+2025-05-14 17:51:54.469 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 27 May
+2025-05-14 17:51:54.553 [main] INFO  pages.DatePickerPage - Hello I am accessible : Wednesday, 28 May
+2025-05-14 17:51:54.636 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 29 May
+2025-05-14 17:51:54.720 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 30 May
+2025-05-14 17:51:54.804 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 31 May
+2025-05-14 17:51:54.806 [main] INFO  pages.DatePickerPage - 36
+2025-05-14 17:52:47.140 [main] INFO  pages.DatePickerPage - all elements : 39
+2025-05-14 17:52:47.224 [main] INFO  pages.DatePickerPage - Hello I am accessible : dismiss popup
+2025-05-14 17:52:47.304 [main] INFO  pages.DatePickerPage - Hello I am accessible : UIKitCatalog
+2025-05-14 17:52:47.387 [main] INFO  pages.DatePickerPage - Hello I am accessible : 14 May 2025
+2025-05-14 17:52:47.472 [main] INFO  pages.DatePickerPage - Hello I am accessible : 5:52 PM
+2025-05-14 17:52:47.558 [main] INFO  pages.DatePickerPage - Hello I am accessible : May 2025
+2025-05-14 17:52:47.756 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 1 May
+2025-05-14 17:52:47.839 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 2 May
+2025-05-14 17:52:47.924 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 3 May
+2025-05-14 17:52:48.011 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 4 May
+2025-05-14 17:52:48.098 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 5 May
+2025-05-14 17:52:48.183 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 6 May
+2025-05-14 17:52:48.268 [main] INFO  pages.DatePickerPage - Hello I am accessible : Wednesday, 7 May
+2025-05-14 17:52:48.351 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 8 May
+2025-05-14 17:52:48.435 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 9 May
+2025-05-14 17:52:48.520 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 10 May
+2025-05-14 17:52:48.605 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 11 May
+2025-05-14 17:52:48.691 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 12 May
+2025-05-14 17:52:48.776 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 13 May
+2025-05-14 17:52:48.861 [main] INFO  pages.DatePickerPage - Hello I am accessible : 1
+2025-05-14 17:52:48.948 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 15 May
+2025-05-14 17:52:49.035 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 16 May
+2025-05-14 17:52:49.119 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 17 May
+2025-05-14 17:52:49.204 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 18 May
+2025-05-14 17:52:49.288 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 19 May
+2025-05-14 17:52:49.373 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 20 May
+2025-05-14 17:52:49.458 [main] INFO  pages.DatePickerPage - Hello I am accessible : Wednesday, 21 May
+2025-05-14 17:52:49.543 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 22 May
+2025-05-14 17:52:49.628 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 23 May
+2025-05-14 17:52:49.713 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 24 May
+2025-05-14 17:52:49.801 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 25 May
+2025-05-14 17:52:49.886 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 26 May
+2025-05-14 17:52:49.970 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 27 May
+2025-05-14 17:52:50.054 [main] INFO  pages.DatePickerPage - Hello I am accessible : Wednesday, 28 May
+2025-05-14 17:52:50.137 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 29 May
+2025-05-14 17:52:50.221 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 30 May
+2025-05-14 17:52:50.306 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 31 May
+2025-05-14 17:52:50.307 [main] INFO  pages.DatePickerPage - 36
+2025-05-14 17:55:01.416 [main] INFO  pages.DatePickerPage - all elements : 39
+2025-05-14 17:55:01.494 [main] INFO  pages.DatePickerPage - Hello I am accessible : dismiss popup
+2025-05-14 17:55:01.570 [main] INFO  pages.DatePickerPage - Hello I am accessible : UIKitCatalog
+2025-05-14 17:55:01.647 [main] INFO  pages.DatePickerPage - Hello I am accessible : 14 May 2025
+2025-05-14 17:55:01.723 [main] INFO  pages.DatePickerPage - Hello I am accessible : 5:54 PM
+2025-05-14 17:55:01.802 [main] INFO  pages.DatePickerPage - Hello I am accessible : May 2025
+2025-05-14 17:55:01.957 [main] INFO  pages.DatePickerPage - Hello I am accessible : May 2025
+2025-05-14 17:55:02.555 [main] INFO  pages.DatePickerPage - Hello I am accessible : 1
+2025-05-14 17:55:02.631 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 15 May
+2025-05-14 17:55:02.707 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 16 May
+2025-05-14 17:55:02.785 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 17 May
+2025-05-14 17:55:02.863 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 18 May
+2025-05-14 17:55:02.944 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 19 May
+2025-05-14 17:55:03.025 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 20 May
+2025-05-14 17:55:03.102 [main] INFO  pages.DatePickerPage - Hello I am accessible : Wednesday, 21 May
+2025-05-14 17:55:03.488 [main] INFO  pages.DatePickerPage - 14
+2025-05-14 17:57:29.362 [main] INFO  pages.DatePickerPage - all elements : 39
+2025-05-14 17:57:29.443 [main] INFO  pages.DatePickerPage - Hello I am accessible : dismiss popup
+2025-05-14 17:57:29.483 [main] INFO  pages.DatePickerPage - Hello I am the selected day : null
+2025-05-14 17:57:29.557 [main] INFO  pages.DatePickerPage - Hello I am accessible : UIKitCatalog
+2025-05-14 17:57:29.596 [main] INFO  pages.DatePickerPage - Hello I am the selected day : null
+2025-05-14 17:57:29.677 [main] INFO  pages.DatePickerPage - Hello I am accessible : 14 May 2025
+2025-05-14 17:57:29.716 [main] INFO  pages.DatePickerPage - Hello I am the selected day : null
+2025-05-14 17:57:29.792 [main] INFO  pages.DatePickerPage - Hello I am accessible : 5:56 PM
+2025-05-14 17:57:29.832 [main] INFO  pages.DatePickerPage - Hello I am the selected day : null
+2025-05-14 17:57:29.911 [main] INFO  pages.DatePickerPage - Hello I am accessible : May 2025
+2025-05-14 17:57:29.951 [main] INFO  pages.DatePickerPage - Hello I am the selected day : May 2025
+2025-05-14 17:57:30.107 [main] INFO  pages.DatePickerPage - Hello I am accessible : May 2025
+2025-05-14 17:57:30.148 [main] INFO  pages.DatePickerPage - Hello I am the selected day : May 2025
+2025-05-14 17:57:30.726 [main] INFO  pages.DatePickerPage - Hello I am accessible : 1
+2025-05-14 17:57:30.767 [main] INFO  pages.DatePickerPage - Hello I am the selected day : 1
+2025-05-14 17:57:30.846 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 15 May
+2025-05-14 17:57:30.885 [main] INFO  pages.DatePickerPage - Hello I am the selected day : null
+2025-05-14 17:57:30.963 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 16 May
+2025-05-14 17:57:31.002 [main] INFO  pages.DatePickerPage - Hello I am the selected day : null
+2025-05-14 17:57:31.080 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 17 May
+2025-05-14 17:57:31.120 [main] INFO  pages.DatePickerPage - Hello I am the selected day : null
+2025-05-14 17:57:31.200 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 18 May
+2025-05-14 17:57:31.239 [main] INFO  pages.DatePickerPage - Hello I am the selected day : null
+2025-05-14 17:57:31.318 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 19 May
+2025-05-14 17:57:31.358 [main] INFO  pages.DatePickerPage - Hello I am the selected day : null
+2025-05-14 17:57:31.436 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 20 May
+2025-05-14 17:57:31.476 [main] INFO  pages.DatePickerPage - Hello I am the selected day : null
+2025-05-14 17:57:31.552 [main] INFO  pages.DatePickerPage - Hello I am accessible : Wednesday, 21 May
+2025-05-14 17:57:31.592 [main] INFO  pages.DatePickerPage - Hello I am the selected day : null
+2025-05-14 17:57:31.981 [main] INFO  pages.DatePickerPage - 14
+2025-05-14 17:59:44.436 [main] INFO  pages.DatePickerPage - all elements : 39
+2025-05-14 18:02:28.466 [main] INFO  pages.DatePickerPage - all elements : 39
+2025-05-14 18:02:28.583 [main] INFO  pages.DatePickerPage - Hello I am accessible : dismiss popup
+2025-05-14 18:02:28.699 [main] INFO  pages.DatePickerPage - Hello I am accessible : UIKitCatalog
+2025-05-14 18:02:28.815 [main] INFO  pages.DatePickerPage - Hello I am accessible : 14 May 2025
+2025-05-14 18:02:28.933 [main] INFO  pages.DatePickerPage - Hello I am accessible : 6:02 PM
+2025-05-14 18:02:29.090 [main] INFO  pages.DatePickerPage - Hello I am accessible : May 2025
+2025-05-14 18:02:29.325 [main] INFO  pages.DatePickerPage - Hello I am accessible : May 2025
+2025-05-14 18:02:30.019 [main] INFO  pages.DatePickerPage - Hello I am the selected day : 1 1
+2025-05-14 18:02:30.056 [main] INFO  pages.DatePickerPage - Hello I am accessible : 1
+2025-05-14 18:02:30.170 [main] INFO  pages.DatePickerPage - Hello I am accessible : Thursday, 15 May
+2025-05-14 18:02:30.287 [main] INFO  pages.DatePickerPage - Hello I am accessible : Friday, 16 May
+2025-05-14 18:02:30.403 [main] INFO  pages.DatePickerPage - Hello I am accessible : Saturday, 17 May
+2025-05-14 18:02:30.520 [main] INFO  pages.DatePickerPage - Hello I am accessible : Sunday, 18 May
+2025-05-14 18:02:30.633 [main] INFO  pages.DatePickerPage - Hello I am accessible : Monday, 19 May
+2025-05-14 18:02:30.751 [main] INFO  pages.DatePickerPage - Hello I am accessible : Tuesday, 20 May
+2025-05-14 18:02:30.869 [main] INFO  pages.DatePickerPage - Hello I am accessible : Wednesday, 21 May
+2025-05-14 18:02:31.249 [main] INFO  pages.DatePickerPage - 14
+2025-05-14 18:06:00.614 [main] INFO  pages.DatePickerPage - all elements : 39
+2025-05-14 18:06:01.090 [main] INFO  pages.DatePickerPage - Hello I am the selected day : May 2025 May 2025
+2025-05-14 18:06:01.315 [main] INFO  pages.DatePickerPage - Hello I am the selected day : May 2025 May 2025
+2025-05-14 18:06:01.979 [main] INFO  pages.DatePickerPage - Hello I am the selected day : 1 1
+2025-05-14 18:07:29.694 [main] INFO  pages.DatePickerPage - all elements : 39
+2025-05-14 18:07:31.003 [main] INFO  pages.DatePickerPage - Hello I am the selected day : 1 1
+2025-05-14 18:09:34.006 [main] INFO  pages.DatePickerPage - Hello I am the selected day : 1 1
+2025-05-14 18:09:34.046 [main] INFO  pages.DatePickerPage - index : 1
+2025-05-14 18:10:27.081 [main] INFO  pages.DatePickerPage - Hello I am the selected day : 1 1
+2025-05-14 18:10:27.124 [main] INFO  pages.DatePickerPage - name : Today, Wednesday, 14 May
+2025-05-14 18:14:08.188 [main] INFO  pages.DatePickerPage - Index: 21 | name: Today, Wednesday, 14 May
+2025-05-14 18:17:06.682 [main] INFO  pages.DatePickerPage - Index: 21 | name: Today, Wednesday, 14 May
+2025-05-14 18:17:48.166 [main] INFO  pages.DatePickerPage - 21
+2025-05-14 18:18:32.866 [main] INFO  pages.DatePickerPage - 1
+2025-05-14 18:19:08.163 [main] INFO  pages.DatePickerPage - 1
+2025-05-14 18:19:50.537 [main] INFO  pages.DatePickerPage - 1
+2025-05-14 18:20:18.561 [main] INFO  pages.DatePickerPage - 1
+2025-05-14 18:21:22.235 [main] INFO  pages.DatePickerPage - 1
+2025-05-14 18:40:01.357 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-14 18:51:58.253 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-14 18:55:28.456 [main] INFO  pages.DatePickerPage - Current Locator : //XCUIElementTypeButton['6:55 PM']
+2025-05-14 18:55:33.238 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-14 19:00:05.733 [main] INFO  pages.DatePickerPage - Clicking ... By.xpath: //XCUIElementTypeButton['7:00 PM']
+2025-05-14 19:02:16.205 [main] INFO  pages.DatePickerPage - Clicking ... By.xpath: //XCUIElementTypeButton['7:02 PM']
+2025-05-14 19:03:17.028 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.accessibilityId: 7:03 PM
+2025-05-14 19:03:52.438 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.accessibilityId: 7:03 PM
+2025-05-14 19:06:28.933 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.accessibilityId: //XCUIElementTypeButton@name['7:06 PM']
+2025-05-14 19:08:10.718 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.accessibilityId: //XCUIElementTypeButton@name["7:08 PM']
+2025-05-14 19:08:47.207 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.accessibilityId: //XCUIElementTypeButton@name["7:08 PM"]
+2025-05-14 19:11:06.740 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.accessibilityId: //XCUIElementTypeButton[@name="7:11 PM"]
+2025-05-14 19:11:19.607 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.accessibilityId: //XCUIElementTypeButton[@name="7:11 PM"]
+2025-05-14 19:11:27.437 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.accessibilityId: //XCUIElementTypeButton[@name="7:11 PM"]
+2025-05-14 19:11:42.040 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.accessibilityId: //XCUIElementTypeButton[@name="7:11 PM"]
+2025-05-14 19:11:55.404 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.accessibilityId: //XCUIElementTypeButton[@name="7:10 PM"]
+2025-05-14 19:12:21.807 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.accessibilityId: //XCUIElementTypeButton[@name="7:10 PM"]
+2025-05-14 19:12:37.643 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.accessibilityId: //XCUIElementTypeButton[@name="7:12 PM"]
+2025-05-14 19:15:12.067 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.accessibilityId: //XCUIElementTypeButton[@name="Date and Time Picker"]//XCUIElementTypeButton
+2025-05-14 19:17:28.322 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.accessibilityId: //XCUIElementTypeButton[@name="Date and Time Picker"]//XCUIElementTypeButton[2]
+2025-05-14 19:23:02.947 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.accessibilityId: //XCUIElementTypeDatePicker//XCUIElementTypeButton[2]
+2025-05-14 19:23:20.272 [main] INFO  pages.DatePickerPage - Clicking ... By.xpath: //XCUIElementTypeDatePicker//XCUIElementTypeButton[2]
+2025-05-14 19:23:56.478 [main] INFO  pages.DatePickerPage - Clicking ... By.xpath: //XCUIElementTypeButton//XCUIElementTypeButton[2]
+2025-05-14 19:24:33.608 [main] INFO  pages.DatePickerPage - Clicking ... By.xpath: //XCUIElementTypeButton//XCUIElementTypeButton[1]
+2025-05-14 19:26:17.882 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.iOSNsPredicate: label MATCHES '[0-9]{1,2}:[0-9]{2}.*[AP]M'
+2025-05-14 19:29:30.529 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-14 19:29:30.533 [main] INFO  pages.DatePickerPage - Clicking ... AppiumBy.iOSNsPredicate: label MATCHES '[0-9]{1,2}:[0-9]{2}.*[AP]M'
+2025-05-14 19:30:22.498 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-14 19:31:11.440 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-14 19:31:45.948 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-14 19:32:50.316 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-14 19:37:27.506 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-14 19:38:15.890 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-14 19:42:00.731 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-14 20:20:35.451 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-14 20:21:07.076 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-14 20:23:03.578 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-14 20:38:44.706 [main] INFO  pages.DatePickerPage - Thursday, 15 May
+2025-05-15 11:09:39.397 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 11:10:33.342 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 11:10:49.045 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 11:11:08.462 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 11:12:47.786 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 11:13:10.349 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 11:14:00.271 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 11:14:49.316 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 11:17:59.336 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 11:18:24.416 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 11:18:34.447 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 11:19:10.154 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 11:20:40.355 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 11:20:58.189 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 11:21:09.308 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 11:22:44.311 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 11:23:07.451 [main] INFO  pages.DatePickerPage - wheel 1  : 11 o’clock
+2025-05-15 13:01:48.546 [main] INFO  pages.DatePickerPage - Friday, 16 May
