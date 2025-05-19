@@ -1,29 +1,32 @@
 package pages;
 
-import base.PageBase;
+import helper.ElementsHelper;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.By;
 
-public class HomePage extends PageBase {
+public class HomePage {
+    private IOSDriver driver;
+    private ElementsHelper elementsAction ;
     public HomePage(IOSDriver driver) {
-        super(driver);
+        this.driver = driver;
+        this.elementsAction = new ElementsHelper(driver);
     }
     By activityIndicator = AppiumBy.accessibilityId("Activity Indicators");
     By sliderButton = AppiumBy.accessibilityId("Sliders");
     By alertsButton = AppiumBy.accessibilityId("Alert Views");
     By datePickerButton = AppiumBy.accessibilityId("Date Picker");
     public void openActivityIndicator(IOSDriver driver){
-        clickElement(driver, activityIndicator);
+        elementsAction.clickElement(driver, activityIndicator);
     }
     public void openSliderPage(IOSDriver driver){
-        clickElement(driver,sliderButton);
+        elementsAction.clickElement(driver,sliderButton);
     }
     public void openAlertsPage(IOSDriver driver){
-        clickElement(driver,alertsButton);
+        elementsAction.clickElement(driver,alertsButton);
     }
     public void openDatePickerPage(IOSDriver driver){
-        clickElement(driver,datePickerButton);
+        elementsAction.clickElement(driver,datePickerButton);
     }
 
 }

@@ -1,17 +1,19 @@
 package contacts_app_pages;
 
-import base.PageBase;
+import helper.ElementsHelper;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.By;
 
-public class ContactAppHomePage extends PageBase {
+public class ContactAppHomePage {
     public ContactAppHomePage(IOSDriver driver) {
-        super(driver);
+        this.driver = driver;
+        this.elementsAction = new ElementsHelper(driver);
     }
     By addButton = AppiumBy.accessibilityId("Add");
-
+    private IOSDriver driver;
+    private ElementsHelper elementsAction ;
     public void openAddContactPage(IOSDriver driver){
-        clickElement(driver,addButton);
+        elementsAction.clickElement(driver,addButton);
     }
 }

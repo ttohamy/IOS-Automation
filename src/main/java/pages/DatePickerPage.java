@@ -1,20 +1,17 @@
 package pages;
 
-import base.PageBase;
+import helper.ElementsHelper;
+import helper.LoggerHelper;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebElement;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-public class DatePickerPage extends PageBase {
+public class DatePickerPage {
 //    By datePickerButton = AppiumBy.accessibilityId("Date and Time Picker");
     By datePickerButton = AppiumBy.iOSNsPredicateString("label MATCHES '\\\\d{1,2} [A-Za-z]+ \\\\d{4}'");
     By daysButton = AppiumBy.xpath("//XCUIElementTypeButton");
@@ -24,16 +21,22 @@ public class DatePickerPage extends PageBase {
     By hoursWheel = AppiumBy.iOSNsPredicateString("value MATCHES '[0-9]{1,2} o’clock'");
     By minutesWheel = AppiumBy.iOSNsPredicateString("value MATCHES '[0-9]{1,2} minutes'");
     By wheels = AppiumBy.xpath("//XCUIElementTypePickerWheel");
+    private IOSDriver driver;
+    private ElementsHelper elementsAction ;
+    private LoggerHelper loggerHelper ;
+
 
     public DatePickerPage(IOSDriver driver) {
-        super(driver);
+        this.driver = driver;
+        this.elementsAction = new ElementsHelper(driver);
+        this.loggerHelper = new LoggerHelper();
     }
 
     public void openDatePicker(IOSDriver driver){
-        clickElement(driver,datePickerButton);
+        elementsAction.clickElement(driver,datePickerButton);
     }
     public void openTimePicker(IOSDriver driver){
-        clickElement(driver, timePickerButton);
+        elementsAction.clickElement(driver, timePickerButton);
     }
     public void selectSpecificDate(IOSDriver driver){
         openDatePicker(driver);
@@ -49,14 +52,14 @@ public class DatePickerPage extends PageBase {
             }
         }
         allDays.get(nextValueToBeClicked).click();
-        logger.info(allDays.get(nextValueToBeClicked).getDomAttribute("name"));
+        loggerHelper.logger.info(allDays.get(nextValueToBeClicked).getDomAttribute("name"));
         dismissDatePickerPopup(driver);
 
     }
     public void selectSpecificTime(IOSDriver driver) throws InterruptedException {
         openTimePicker(driver);
         List<WebElement> timeWheels = driver.findElements(wheels);
-        scrollWheel(driver,hoursWheel);
+        elementsAction.scrollWheel(driver,hoursWheel);
         int expectedMinutes = Integer.valueOf(getMinutesInSpecificFormat());
         //As time have only even number here we check if the number is odd will add to it 1
         if(expectedMinutes%2!=0){
@@ -82,7 +85,7 @@ public class DatePickerPage extends PageBase {
     }
 
     public void dismissDatePickerPopup(IOSDriver driver){
-        clickElement(driver,dismissDatePickerPopupButton);
+        elementsAction.clickElement(driver,dismissDatePickerPopupButton);
     }
 
 }

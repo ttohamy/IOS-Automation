@@ -1,34 +1,37 @@
 package pages;
 
-import base.PageBase;
+import helper.ElementsHelper;
+import helper.WaitHelper;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.interactions.PointerInput;
 
-import javax.swing.*;
-
-public class SlidingPage extends PageBase {
+public class SlidingPage {
     By slider = AppiumBy.xpath("//XCUIElementTypeSlider[1]");
     By tintedSlider = AppiumBy.xpath("(//XCUIElementTypeSlider[@value=\"50%\"])[1]");
+    private IOSDriver driver;
+    private ElementsHelper elementsAction ;
+    private WaitHelper wait ;
     public SlidingPage(IOSDriver driver) {
-        super(driver);
+        this.driver = driver;
+        this.elementsAction = new ElementsHelper(driver);
+        wait = new WaitHelper(driver);
     }
     public void slideRight(IOSDriver driver) throws InterruptedException {
-        waitBeforeInteract(driver,slider);
-        sliding(driver, "right",42,100,slider);
+        wait.waitBeforeInteract(driver,slider);
+        elementsAction.sliding(driver, "right",42,100,slider);
 
     }
     public void slideLeft(IOSDriver driver) throws InterruptedException {
-        waitBeforeInteract(driver,slider);
-        sliding(driver, "left",99,20,slider);
+        wait.waitBeforeInteract(driver,slider);
+        elementsAction.sliding(driver, "left",99,20,slider);
     }
     public void slideRightForTinted(IOSDriver driver){
-        waitBeforeInteract(driver,tintedSlider);
-        sliding(driver, "right",50,100,tintedSlider);
+        wait.waitBeforeInteract(driver,tintedSlider);
+        elementsAction.sliding(driver, "right",50,100,tintedSlider);
     }
     public String getCurrentSliderValue(IOSDriver driver){
-        return getTextFromField(driver,slider);
+        return elementsAction.getTextFromField(driver, slider);
     }
 
 }

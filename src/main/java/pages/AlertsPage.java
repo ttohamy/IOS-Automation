@@ -1,11 +1,11 @@
 package pages;
 
-import base.PageBase;
+import helper.ElementsHelper;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.By;
 
-public class AlertsPage extends PageBase {
+public class AlertsPage  {
     By simpleButton = AppiumBy.accessibilityId("Simple");
     By okayCancelButton = AppiumBy.accessibilityId("Okay / Cancel");
     By otherButton = AppiumBy.accessibilityId("Other");
@@ -15,45 +15,48 @@ public class AlertsPage extends PageBase {
     By alertTextArea = AppiumBy.xpath("//XCUIElementTypeTextField");
     By secureAlertSubmitButton = AppiumBy.accessibilityId("OK");
     By secureAlertTextArea= AppiumBy.iOSClassChain("**/XCUIElementTypeAlert[`name == \"A Short Title Is Best\"`]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeSecureTextField");
+    IOSDriver driver;
+    public ElementsHelper elementsAction ;
     public AlertsPage(IOSDriver driver) {
-        super(driver);
+       this.driver = driver;
+       this.elementsAction = new ElementsHelper(driver);
     }
 
     public void openSimpleAlert(IOSDriver driver){
-        clickElement(driver,simpleButton);
+        elementsAction.clickElement(driver,simpleButton);
     }
     public void openOkayCancelAlert(IOSDriver driver){
-        clickElement(driver,okayCancelButton);
+        elementsAction.clickElement(driver,okayCancelButton);
     }
     public void openOtherAlert(IOSDriver driver){
-        clickElement(driver,otherButton);
+        elementsAction.clickElement(driver,otherButton);
     }
     public void openTextEntryAlert(IOSDriver driver){
-        clickElement(driver,textEntryAlertButton);
+        elementsAction.clickElement(driver,textEntryAlertButton);
     }
     public void openSecureTextEntryAlert(IOSDriver driver){
-        clickElement(driver,secureTextEntryButton);
+        elementsAction.clickElement(driver,secureTextEntryButton);
     }
 
     public void interactWithSimpleAlert(IOSDriver driver){
         openSimpleAlert(driver);
-        switchToAlertAndDoAction(driver,"accept");
+        elementsAction.switchToAlertAndDoAction(driver,"accept");
     }
     public void interactWithOkayCancelAlert(IOSDriver driver){
         openOkayCancelAlert(driver);
-        switchToAlertAndDoAction(driver,"dismiss");
+        elementsAction.switchToAlertAndDoAction(driver,"dismiss");
     }
     public void interactWithOtherAlert(IOSDriver driver){
         openOtherAlert(driver);
-        switchToAlertAndSelectOption(driver,allButtons,2);
+        elementsAction.switchToAlertAndSelectOption(driver,allButtons,2);
     }
     public void interactWithTextAreaAlert(IOSDriver driver){
         openTextEntryAlert(driver);
-        switchToAlertAndAddText(driver,alertTextArea,null,"Adding some text to alert! ");
+        elementsAction.switchToAlertAndAddText(driver,alertTextArea,null,"Adding some text to alert! ");
     }
     public void interactWithSecureTextEntryAlert(IOSDriver driver){
         openSecureTextEntryAlert(driver);
-        switchToAlertAndAddText(driver,secureAlertTextArea,secureAlertSubmitButton,"Adding");
+        elementsAction.switchToAlertAndAddText(driver,secureAlertTextArea,secureAlertSubmitButton,"Adding");
     }
 
 }

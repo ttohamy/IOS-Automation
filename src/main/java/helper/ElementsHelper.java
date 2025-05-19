@@ -1,15 +1,12 @@
-package base;
+package helper;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.PointerInput;
 import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.annotation.Nullable;
@@ -18,28 +15,24 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.TimeoutException;
 
-public class PageBase {
-    protected IOSDriver driver ;
-    public Logger logger = LogManager.getLogger(getClass());
+public class ElementsHelper {
+    private IOSDriver driver;
+    private WaitHelper wait ;
+    private LoggerHelper loggerHelper;
 
-    public PageBase(IOSDriver driver){
+    public ElementsHelper(IOSDriver driver) {
         this.driver = driver;
-    }
-    public void waitBeforeInteract(IOSDriver driver, By locator) {
-        FluentWait wait = new FluentWait(driver).withTimeout(Duration.ofSeconds(7)).pollingEvery(Duration.ofSeconds(1))
-                .ignoring(NoSuchElementException.class).ignoring(TimeoutException.class).withMessage(locator+" Not Found");
-        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        this.wait = new WaitHelper(driver);
+        this.loggerHelper = new LoggerHelper();
     }
     public void clickElement(IOSDriver driver , By locator){
-            waitBeforeInteract(driver,locator);
-            driver.findElement(locator).click();
+        wait.waitBeforeInteract(driver,locator);
+        driver.findElement(locator).click();
     }
     public void addTextToField(IOSDriver driver , By locator,String text){
-            waitBeforeInteract(driver,locator);
-            driver.findElement(locator).sendKeys(text);
+        wait.waitBeforeInteract(driver,locator);
+        driver.findElement(locator).sendKeys(text);
     }
     public void sliding(AppiumDriver driver , String slidingDirection , int startPointPercentage  , int endPointPercentage , By locator){
         PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH , "finger");
@@ -53,7 +46,7 @@ public class PageBase {
         double movementPercentage = Math.abs(((double) endPointPercentage /100) - ((double) startPointPercentage /100));
         System.out.println("movementPercentage : "+movementPercentage);
         if(slidingDirection.equalsIgnoreCase("right")) {
-             endX = startX + (int) (elementWidth * movementPercentage);
+            endX = startX + (int) (elementWidth * movementPercentage);
         }
         else if(slidingDirection.equalsIgnoreCase("left")) {
             endX = startX -  (int) (elementWidth * movementPercentage);
@@ -72,7 +65,7 @@ public class PageBase {
     }
     public String getTextFromField(IOSDriver driver, By locator){
         try{
-            waitBeforeInteract(driver,locator);
+            wait.waitBeforeInteract(driver,locator);
             System.out.println(driver.findElement(locator).getText());
             return driver.findElement(locator).getText();
         }catch (Exception e){
@@ -102,8 +95,8 @@ public class PageBase {
         try {
             options.get(option).click();
         }catch (IndexOutOfBoundsException e ){
-           logger.info("You are out of the index your index should be from 0 to"+(options.size()-1));
-           e.printStackTrace();
+            loggerHelper.logger.info("You are out of the index your index should be from 0 to"+(options.size()-1));
+            e.printStackTrace();
         }
     }
     public void switchToAlertAndAddText(IOSDriver driver , By textAreaLocator , @Nullable By submitButtonLocator, String text ) {
@@ -112,14 +105,14 @@ public class PageBase {
         addTextToField(driver,textAreaLocator,text);
         if(submitButtonLocator != null ){
             if((driver.findElement(submitButtonLocator).isEnabled())){
-                logger.info("Submit button is enabled. Text length is accepted. PAlert will be accepted.");
+                loggerHelper.logger.info("Submit button is enabled. Text length is accepted. PAlert will be accepted.");
                 alert.accept();
             }else {
-                logger.info("Submit button is disabled. Text length is not accepted. Alert will be dismissed.");
+                loggerHelper.logger.info("Submit button is disabled. Text length is not accepted. Alert will be dismissed.");
                 alert.dismiss();
             }
         }else{
-            logger.info("No validation required. Proceeding to accept alert.");
+            loggerHelper.logger.info("No validation required. Proceeding to accept alert.");
             alert.accept();
         }
     }
