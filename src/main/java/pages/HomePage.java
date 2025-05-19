@@ -16,17 +16,17 @@ public class HomePage {
     By sliderButton = AppiumBy.accessibilityId("Sliders");
     By alertsButton = AppiumBy.accessibilityId("Alert Views");
     By datePickerButton = AppiumBy.accessibilityId("Date Picker");
-    public void openActivityIndicator(IOSDriver driver){
-        elementsAction.clickElement(driver, activityIndicator);
+    public void openActivityIndicator(){
+        elementsAction.clickElement( activityIndicator);
     }
-    public void openSliderPage(IOSDriver driver){
-        elementsAction.clickElement(driver,sliderButton);
+    public void openSliderPage(){
+        elementsAction.clickElement(sliderButton);
     }
-    public void openAlertsPage(IOSDriver driver){
-        elementsAction.clickElement(driver,alertsButton);
+    public void openAlertsPage(){
+        elementsAction.clickElement(alertsButton);
     }
-    public void openDatePickerPage(IOSDriver driver){
-        elementsAction.clickElement(driver,datePickerButton);
+    public void openDatePickerPage(){
+        elementsAction.clickElement(datePickerButton);
     }
 
 }

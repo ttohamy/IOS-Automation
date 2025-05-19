@@ -1,5 +1,6 @@
 package helper;
 
+import base.DriverManager;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.*;
@@ -26,21 +27,21 @@ public class ElementsHelper {
         this.wait = new WaitHelper(driver);
         this.loggerHelper = new LoggerHelper();
     }
-    public void clickElement(IOSDriver driver , By locator){
-        wait.waitBeforeInteract(driver,locator);
-        driver.findElement(locator).click();
+    public void clickElement(By locator){
+        wait.waitBeforeInteract(locator);
+        DriverManager.getDriver().findElement(locator).click();
     }
-    public void addTextToField(IOSDriver driver , By locator,String text){
-        wait.waitBeforeInteract(driver,locator);
-        driver.findElement(locator).sendKeys(text);
+    public void addTextToField(By locator,String text){
+        wait.waitBeforeInteract(locator);
+        DriverManager.getDriver().findElement(locator).sendKeys(text);
     }
-    public void sliding(AppiumDriver driver , String slidingDirection , int startPointPercentage  , int endPointPercentage , By locator){
+    public void sliding( String slidingDirection , int startPointPercentage  , int endPointPercentage , By locator){
         PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH , "finger");
         Sequence swipe = new Sequence(finger,1);
-        Dimension size = driver.findElement(locator).getSize();
+        Dimension size = DriverManager.getDriver().findElement(locator).getSize();
         int elementWidth = size.getWidth();
         int elementHeight = size.getHeight();
-        WebElement slider = driver.findElement(locator);
+        WebElement slider = DriverManager.getDriver().findElement(locator);
         int startX = (int) (slider.getLocation().x + (elementWidth* ((double) startPointPercentage/100)));
         int endX = 0 ;
         double movementPercentage = Math.abs(((double) endPointPercentage /100) - ((double) startPointPercentage /100));
@@ -61,25 +62,25 @@ public class ElementsHelper {
         swipe.addAction(finger.createPointerMove(Duration.ofMillis(1000), PointerInput.Origin.viewport(),endX , centerY));
         // 0 is the standard for touch pointer down
         swipe.addAction(finger.createPointerUp(0));
-        driver.perform(Arrays.asList(swipe));
+        DriverManager.getDriver().perform(Arrays.asList(swipe));
     }
-    public String getTextFromField(IOSDriver driver, By locator){
+    public String getTextFromField(By locator){
         try{
-            wait.waitBeforeInteract(driver,locator);
-            System.out.println(driver.findElement(locator).getText());
-            return driver.findElement(locator).getText();
+            wait.waitBeforeInteract(locator);
+            System.out.println(DriverManager.getDriver().findElement(locator).getText());
+            return DriverManager.getDriver().findElement(locator).getText();
         }catch (Exception e){
             System.out.println("Exception : can not retrieve Element Text");
             return e.getMessage();
         }
     }
-    public void waitAlertToBePresent(IOSDriver driver){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+    public void waitAlertToBePresent(){
+        WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(5));
         wait.until(ExpectedConditions.alertIsPresent());
     }
-    public void switchToAlertAndDoAction(IOSDriver driver , String action){
-        waitAlertToBePresent(driver);
-        Alert alert = driver.switchTo().alert();
+    public void switchToAlertAndDoAction( String action){
+        waitAlertToBePresent();
+        Alert alert = DriverManager.getDriver().switchTo().alert();
         if(action.equalsIgnoreCase("accept")){
             alert.accept();
         } else if(action.equalsIgnoreCase("dismiss")){
@@ -88,9 +89,9 @@ public class ElementsHelper {
             throw new IllegalArgumentException("Action Must Be Accept or Dismiss");
         }
     }
-    public void switchToAlertAndSelectOption(IOSDriver driver ,By buttonsLocator ,int option){
-        waitAlertToBePresent(driver);
-        List<WebElement> options = driver.findElements(buttonsLocator);
+    public void switchToAlertAndSelectOption(By buttonsLocator ,int option){
+        waitAlertToBePresent();
+        List<WebElement> options = DriverManager.getDriver().findElements(buttonsLocator);
         System.out.println("all options : "+options.size());
         try {
             options.get(option).click();
@@ -99,12 +100,12 @@ public class ElementsHelper {
             e.printStackTrace();
         }
     }
-    public void switchToAlertAndAddText(IOSDriver driver , By textAreaLocator , @Nullable By submitButtonLocator, String text ) {
-        waitAlertToBePresent(driver);
-        Alert alert = driver.switchTo().alert();
-        addTextToField(driver,textAreaLocator,text);
+    public void switchToAlertAndAddText( By textAreaLocator , @Nullable By submitButtonLocator, String text ) {
+        waitAlertToBePresent();
+        Alert alert = DriverManager.getDriver().switchTo().alert();
+        addTextToField(textAreaLocator,text);
         if(submitButtonLocator != null ){
-            if((driver.findElement(submitButtonLocator).isEnabled())){
+            if((DriverManager.getDriver().findElement(submitButtonLocator).isEnabled())){
                 loggerHelper.logger.info("Submit button is enabled. Text length is accepted. PAlert will be accepted.");
                 alert.accept();
             }else {
@@ -116,12 +117,12 @@ public class ElementsHelper {
             alert.accept();
         }
     }
-    public void scrollWheel(IOSDriver driver , By elementLocator ){
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+    public void scrollWheel( By elementLocator ){
+        JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
         Map<String, Object> params = new HashMap<>();
         params.put("order", "next"); // or "previous" --> Direction to scroll
         params.put("offset", 0.1);  // try with 0.1 or 0.2 if needed Scroll strength small = finer control
-        params.put("element", ((RemoteWebElement) driver.findElement(elementLocator)).getId()); // assuming 0 is the hour
+        params.put("element", ((RemoteWebElement) DriverManager.getDriver().findElement(elementLocator)).getId()); // assuming 0 is the hour
         js.executeScript("mobile: selectPickerWheelValue", params);
     }
 

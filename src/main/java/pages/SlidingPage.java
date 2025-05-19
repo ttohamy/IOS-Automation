@@ -17,21 +17,21 @@ public class SlidingPage {
         this.elementsAction = new ElementsHelper(driver);
         wait = new WaitHelper(driver);
     }
-    public void slideRight(IOSDriver driver) throws InterruptedException {
-        wait.waitBeforeInteract(driver,slider);
-        elementsAction.sliding(driver, "right",42,100,slider);
+    public void slideRight() throws InterruptedException {
+        wait.waitBeforeInteract(slider);
+        elementsAction.sliding( "right",42,100,slider);
 
     }
-    public void slideLeft(IOSDriver driver) throws InterruptedException {
-        wait.waitBeforeInteract(driver,slider);
-        elementsAction.sliding(driver, "left",99,20,slider);
+    public void slideLeft() throws InterruptedException {
+        wait.waitBeforeInteract(slider);
+        elementsAction.sliding( "left",99,20,slider);
     }
-    public void slideRightForTinted(IOSDriver driver){
-        wait.waitBeforeInteract(driver,tintedSlider);
-        elementsAction.sliding(driver, "right",50,100,tintedSlider);
+    public void slideRightForTinted(){
+        wait.waitBeforeInteract(tintedSlider);
+        elementsAction.sliding( "right",50,100,tintedSlider);
     }
-    public String getCurrentSliderValue(IOSDriver driver){
-        return elementsAction.getTextFromField(driver, slider);
+    public String getCurrentSliderValue(){
+        return elementsAction.getTextFromField( slider);
     }
 
 }

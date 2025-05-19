@@ -1,5 +1,6 @@
 package pages;
 
+import base.DriverManager;
 import helper.ElementsHelper;
 import helper.LoggerHelper;
 import io.appium.java_client.AppiumBy;
@@ -32,15 +33,15 @@ public class DatePickerPage {
         this.loggerHelper = new LoggerHelper();
     }
 
-    public void openDatePicker(IOSDriver driver){
-        elementsAction.clickElement(driver,datePickerButton);
+    public void openDatePicker(){
+        elementsAction.clickElement(datePickerButton);
     }
-    public void openTimePicker(IOSDriver driver){
-        elementsAction.clickElement(driver, timePickerButton);
+    public void openTimePicker(){
+        elementsAction.clickElement(timePickerButton);
     }
-    public void selectSpecificDate(IOSDriver driver){
-        openDatePicker(driver);
-        List<WebElement> allDays = driver.findElements(daysButton);
+    public void selectSpecificDate(){
+        openDatePicker();
+        List<WebElement> allDays = DriverManager.getDriver().findElements(daysButton);
         int nextValueToBeClicked = 0;
         for (int i = 0; i < allDays.size(); i++) {
             WebElement day = allDays.get(i);
@@ -53,13 +54,13 @@ public class DatePickerPage {
         }
         allDays.get(nextValueToBeClicked).click();
         loggerHelper.logger.info(allDays.get(nextValueToBeClicked).getDomAttribute("name"));
-        dismissDatePickerPopup(driver);
+        dismissDatePickerPopup();
 
     }
-    public void selectSpecificTime(IOSDriver driver) throws InterruptedException {
-        openTimePicker(driver);
-        List<WebElement> timeWheels = driver.findElements(wheels);
-        elementsAction.scrollWheel(driver,hoursWheel);
+    public void selectSpecificTime() throws InterruptedException {
+        openTimePicker();
+        List<WebElement> timeWheels = DriverManager.getDriver().findElements(wheels);
+        elementsAction.scrollWheel(hoursWheel);
         int expectedMinutes = Integer.valueOf(getMinutesInSpecificFormat());
         //As time have only even number here we check if the number is odd will add to it 1
         if(expectedMinutes%2!=0){
@@ -70,7 +71,7 @@ public class DatePickerPage {
         timeWheels.get(2).sendKeys(getLocalTimeAMPMFormat());
         Thread.sleep(500);
         timeWheels.get(1).sendKeys(String.valueOf(expectedMinutes));
-        dismissDatePickerPopup(driver);
+        dismissDatePickerPopup();
     }
     public String getLocalTimeAMPMFormat(){
         LocalTime localTime = LocalTime.now();
@@ -84,8 +85,8 @@ public class DatePickerPage {
         return minutesAfterTime.format(minutesFormater);
     }
 
-    public void dismissDatePickerPopup(IOSDriver driver){
-        elementsAction.clickElement(driver,dismissDatePickerPopupButton);
+    public void dismissDatePickerPopup(){
+        elementsAction.clickElement(dismissDatePickerPopupButton);
     }
 
 }

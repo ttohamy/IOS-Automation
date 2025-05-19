@@ -9,7 +9,7 @@ public class AddContactTest extends TestBase {
 
     @Test(retryAnalyzer = RetryAnalyzer.class)
     public void checkThatUserCanAddNewContact(){
-        contactAppHomePage.openAddContactPage(driver);
+        contactAppHomePage.openAddContactPage();
         addContactPage.addContactInfo(driver,"Mohamed" , "Eltohamy");
         logger.info("assert that share contact button appears");
         Assert.assertTrue(addContactPage.isShareContactButtonAppears(driver));

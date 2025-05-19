@@ -532,3 +532,10 @@
 2025-05-15 14:21:05.088 [main] INFO  pages.DatePickerPage - Friday, 16 May
 2025-05-15 14:21:39.413 [main] INFO  pages.DatePickerPage - Friday, 16 May
 2025-05-15 14:22:11.310 [main] INFO  pages.DatePickerPage - Friday, 16 May
+2025-05-19 19:42:30.142 [main] INFO  helper.LoggerHelper - No validation required. Proceeding to accept alert.
+2025-05-19 19:42:34.104 [main] INFO  helper.LoggerHelper - Submit button is enabled. Text length is accepted. PAlert will be accepted.
+2025-05-19 19:43:23.456 [main] INFO  helper.LoggerHelper - Tuesday, 20 May
+2025-05-19 19:43:50.514 [main] INFO  helper.LoggerHelper - Tuesday, 20 May
+2025-05-19 19:46:28.922 [main] INFO  utils.RetryAnalyzer - Retrying checkThatUserCanSlide (attempt 1)
+2025-05-19 19:46:36.282 [main] INFO  utils.RetryAnalyzer - Retrying checkThatUserCanSlide (attempt 2)
+2025-05-19 19:46:49.398 [main] INFO  utils.RetryAnalyzer - Retrying checkThatUserCanSlide (attempt 3)

@@ -13,7 +13,7 @@ public class ContactAppHomePage {
     By addButton = AppiumBy.accessibilityId("Add");
     private IOSDriver driver;
     private ElementsHelper elementsAction ;
-    public void openAddContactPage(IOSDriver driver){
-        elementsAction.clickElement(driver,addButton);
+    public void openAddContactPage(){
+        elementsAction.clickElement(addButton);
     }
 }

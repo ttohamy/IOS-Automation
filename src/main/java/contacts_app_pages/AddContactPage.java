@@ -21,13 +21,13 @@ public class AddContactPage{
         wait = new WaitHelper(driver);
     }
     public void addContactInfo(IOSDriver driver , String firstName , String lastName ){
-        elementsAction.addTextToField(driver , firstNameLocator , firstName);
-        elementsAction.addTextToField(driver , lastNameLocator , lastName);
-        elementsAction.clickElement(driver,doneLocator);
+        elementsAction.addTextToField( firstNameLocator , firstName);
+        elementsAction.addTextToField(lastNameLocator , lastName);
+        elementsAction.clickElement(doneLocator);
     }
     public boolean isShareContactButtonAppears(IOSDriver driver){
         try {
-            wait.waitBeforeInteract(driver,shareContactLocator);
+            wait.waitBeforeInteract(shareContactLocator);
             return driver.findElement(shareContactLocator).isDisplayed();
         }catch (Exception e){
             System.out.println(e.getMessage());

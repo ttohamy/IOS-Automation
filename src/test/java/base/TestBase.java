@@ -16,6 +16,7 @@ import org.testng.annotations.BeforeTest;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.security.PublicKey;
+import java.sql.Driver;
 
 import org.apache.logging.log4j.LogManager;
 import pages.SlidingPage;
@@ -46,6 +47,7 @@ public class TestBase {
 //        cap.setCapability("appium:fullReset", false);
         try {
             driver = new IOSDriver(new URL("http://127.0.0.1:4723"), cap);
+            DriverManager.setDriver(driver);
             System.out.println("Appium driver session created successfully.");
         } catch (Exception e) {
             System.err.println("Error creating Appium driver session: " + e.getMessage());

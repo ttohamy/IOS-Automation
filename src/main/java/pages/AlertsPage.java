@@ -22,41 +22,41 @@ public class AlertsPage  {
        this.elementsAction = new ElementsHelper(driver);
     }
 
-    public void openSimpleAlert(IOSDriver driver){
-        elementsAction.clickElement(driver,simpleButton);
+    public void openSimpleAlert(){
+        elementsAction.clickElement(simpleButton);
     }
-    public void openOkayCancelAlert(IOSDriver driver){
-        elementsAction.clickElement(driver,okayCancelButton);
+    public void openOkayCancelAlert(){
+        elementsAction.clickElement(okayCancelButton);
     }
-    public void openOtherAlert(IOSDriver driver){
-        elementsAction.clickElement(driver,otherButton);
+    public void openOtherAlert(){
+        elementsAction.clickElement(otherButton);
     }
-    public void openTextEntryAlert(IOSDriver driver){
-        elementsAction.clickElement(driver,textEntryAlertButton);
+    public void openTextEntryAlert(){
+        elementsAction.clickElement(textEntryAlertButton);
     }
-    public void openSecureTextEntryAlert(IOSDriver driver){
-        elementsAction.clickElement(driver,secureTextEntryButton);
+    public void openSecureTextEntryAlert(){
+        elementsAction.clickElement(secureTextEntryButton);
     }
 
-    public void interactWithSimpleAlert(IOSDriver driver){
-        openSimpleAlert(driver);
-        elementsAction.switchToAlertAndDoAction(driver,"accept");
+    public void interactWithSimpleAlert(){
+        openSimpleAlert();
+        elementsAction.switchToAlertAndDoAction("accept");
     }
-    public void interactWithOkayCancelAlert(IOSDriver driver){
-        openOkayCancelAlert(driver);
-        elementsAction.switchToAlertAndDoAction(driver,"dismiss");
+    public void interactWithOkayCancelAlert(){
+        openOkayCancelAlert();
+        elementsAction.switchToAlertAndDoAction("dismiss");
     }
-    public void interactWithOtherAlert(IOSDriver driver){
-        openOtherAlert(driver);
-        elementsAction.switchToAlertAndSelectOption(driver,allButtons,2);
+    public void interactWithOtherAlert(){
+        openOtherAlert();
+        elementsAction.switchToAlertAndSelectOption(allButtons,2);
     }
-    public void interactWithTextAreaAlert(IOSDriver driver){
-        openTextEntryAlert(driver);
-        elementsAction.switchToAlertAndAddText(driver,alertTextArea,null,"Adding some text to alert! ");
+    public void interactWithTextAreaAlert(){
+        openTextEntryAlert();
+        elementsAction.switchToAlertAndAddText(alertTextArea,null,"Adding some text to alert! ");
     }
-    public void interactWithSecureTextEntryAlert(IOSDriver driver){
-        openSecureTextEntryAlert(driver);
-        elementsAction.switchToAlertAndAddText(driver,secureAlertTextArea,secureAlertSubmitButton,"Adding");
+    public void interactWithSecureTextEntryAlert(){
+        openSecureTextEntryAlert();
+        elementsAction.switchToAlertAndAddText(secureAlertTextArea,secureAlertSubmitButton,"Adding");
     }
 
 }

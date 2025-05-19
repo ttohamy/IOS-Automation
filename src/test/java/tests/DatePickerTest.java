@@ -6,8 +6,8 @@ import org.testng.annotations.Test;
 public class DatePickerTest extends TestBase {
     @Test
     public void userCanSelectSpecificDate() throws InterruptedException {
-        homePage.openDatePickerPage(driver);
-        datePickerPage.selectSpecificDate(driver);
-        datePickerPage.selectSpecificTime(driver);
+        homePage.openDatePickerPage();
+        datePickerPage.selectSpecificDate();
+        datePickerPage.selectSpecificTime();
     }
 }
