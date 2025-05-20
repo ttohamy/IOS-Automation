@@ -623,3 +623,9 @@
 2025-05-20 15:18:39.547 [main] INFO  helper.LoggerHelper - getTextFromField AppiumBy.iOSNsPredicate: label MATCHES '[0-9]{1,2}' : 5
 2025-05-20 15:18:40.429 [main] INFO  helper.LoggerHelper - Decrement button is enabled
 2025-05-20 15:18:40.660 [main] INFO  helper.LoggerHelper - getTextFromField AppiumBy.iOSNsPredicate: label MATCHES '[0-9]{1,2}' : 4
+2025-05-20 17:34:29.076 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 17:34:29.939 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 17:34:30.805 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 17:34:31.657 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 17:34:32.503 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 17:34:32.765 [main] INFO  helper.LoggerHelper - getTextFromField AppiumBy.iOSNsPredicate: label MATCHES '[0-9]{1,2}' : 5

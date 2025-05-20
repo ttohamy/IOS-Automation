@@ -17,6 +17,7 @@ public class HomePage {
     By alertsButton = AppiumBy.accessibilityId("Alert Views");
     By datePickerButton = AppiumBy.accessibilityId("Date Picker");
     By steppersButton = AppiumBy.accessibilityId("Steppers");
+    By stackViewsButton = AppiumBy.accessibilityId("Stack Views");
     public void openActivityIndicator(){
         elementsAction.clickElement( activityIndicator);
     }
@@ -31,6 +32,8 @@ public class HomePage {
     }
     public void openSteppersPage(){
         elementsAction.clickElement(steppersButton);
+    }public void openStakeViewsPage(){
+        elementsAction.clickElement(stackViewsButton);
     }
 
 }

@@ -18,8 +18,8 @@ public class SteppersPage {
 
     public SteppersPage() {
         this.elementAction = new ElementsHelper(DriverManager.getDriver());
-        waitHelper = new WaitHelper(DriverManager.getDriver());
-        loggerHelper = new LoggerHelper();
+        this.waitHelper = new WaitHelper(DriverManager.getDriver());
+        this.loggerHelper = new LoggerHelper();
     }
     public void incrementStepper(){
         if(elementAction.isElementEnabled(defaultStepperIncrement)) {

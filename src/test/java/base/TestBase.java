@@ -29,6 +29,7 @@ public class TestBase {
     protected AlertsPage alertsPage;
     protected DatePickerPage  datePickerPage;
     protected SteppersPage steppersPage;
+    protected StackViewPage stackViewPage;
 //Simulator Capabilities
     @BeforeTest
     public void intiDriver() throws MalformedURLException {
@@ -82,6 +83,7 @@ public class TestBase {
         alertsPage = new AlertsPage(driver);
         datePickerPage = new DatePickerPage(driver);
         steppersPage = new SteppersPage();
+        stackViewPage = new StackViewPage();
     }
     @BeforeMethod
     public void beforeMethod(){

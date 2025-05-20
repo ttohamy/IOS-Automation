@@ -127,5 +127,17 @@ public class ElementsHelper {
     public boolean isElementEnabled(By locator){
         return DriverManager.getDriver().findElement(locator).isEnabled();
     }
+    public boolean isElemetDisplayed(By locator){
+        return DriverManager.getDriver().findElement(locator).isDisplayed();
+    }
+    public boolean isElementDisappeared(By locator) {
+        WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(5));
+        try {
+            return wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+        } catch (Exception e) {
+            System.out.println("Exception while waiting for element to disappear: " + e.getMessage());
+            return false;
+        }
+    }
 
 }
