@@ -6,9 +6,7 @@ import contacts_app_pages.ContactAppHomePage;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
-import pages.AlertsPage;
-import pages.DatePickerPage;
-import pages.HomePage;
+import pages.*;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeTest;
@@ -19,7 +17,6 @@ import java.security.PublicKey;
 import java.sql.Driver;
 
 import org.apache.logging.log4j.LogManager;
-import pages.SlidingPage;
 
 public class TestBase {
     protected static IOSDriver driver ;
@@ -31,6 +28,7 @@ public class TestBase {
     protected SlidingPage slidingPage;
     protected AlertsPage alertsPage;
     protected DatePickerPage  datePickerPage;
+    protected SteppersPage steppersPage;
 //Simulator Capabilities
     @BeforeTest
     public void intiDriver() throws MalformedURLException {
@@ -83,6 +81,7 @@ public class TestBase {
         slidingPage = new SlidingPage(driver);
         alertsPage = new AlertsPage(driver);
         datePickerPage = new DatePickerPage(driver);
+        steppersPage = new SteppersPage();
     }
     @BeforeMethod
     public void beforeMethod(){

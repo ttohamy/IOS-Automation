@@ -1,7 +1,6 @@
 package helper;
 
 import base.DriverManager;
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.PointerInput;
@@ -67,10 +66,10 @@ public class ElementsHelper {
     public String getTextFromField(By locator){
         try{
             wait.waitBeforeInteract(locator);
-            System.out.println(DriverManager.getDriver().findElement(locator).getText());
+            loggerHelper.logger.info("getTextFromField "+locator+" : "+DriverManager.getDriver().findElement(locator).getText());
             return DriverManager.getDriver().findElement(locator).getText();
         }catch (Exception e){
-            System.out.println("Exception : can not retrieve Element Text");
+            loggerHelper.logger.error("Exception : can not retrieve Element Text");
             return e.getMessage();
         }
     }
@@ -124,6 +123,9 @@ public class ElementsHelper {
         params.put("offset", 0.1);  // try with 0.1 or 0.2 if needed Scroll strength small = finer control
         params.put("element", ((RemoteWebElement) DriverManager.getDriver().findElement(elementLocator)).getId()); // assuming 0 is the hour
         js.executeScript("mobile: selectPickerWheelValue", params);
+    }
+    public boolean isElementEnabled(By locator){
+        return DriverManager.getDriver().findElement(locator).isEnabled();
     }
 
 }

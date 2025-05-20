@@ -539,3 +539,87 @@
 2025-05-19 19:46:28.922 [main] INFO  utils.RetryAnalyzer - Retrying checkThatUserCanSlide (attempt 1)
 2025-05-19 19:46:36.282 [main] INFO  utils.RetryAnalyzer - Retrying checkThatUserCanSlide (attempt 2)
 2025-05-19 19:46:49.398 [main] INFO  utils.RetryAnalyzer - Retrying checkThatUserCanSlide (attempt 3)
+2025-05-20 14:49:48.931 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:49:49.876 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:49:50.825 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:49:51.741 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:49:52.662 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:49:53.695 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:49:54.607 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:49:55.518 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:49:56.402 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:49:57.291 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:49:58.308 [main] INFO  helper.LoggerHelper - Decrement button is enabled
+2025-05-20 14:55:30.410 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:55:31.350 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:55:32.237 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:55:33.144 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:55:34.077 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:55:34.993 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:55:35.914 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:55:36.943 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:55:37.858 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:55:38.777 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:55:39.160 [main] INFO  helper.LoggerHelper - 10
+2025-05-20 14:55:40.044 [main] INFO  helper.LoggerHelper - Decrement button is enabled
+2025-05-20 14:57:30.049 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:57:31.001 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:57:31.950 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:57:32.891 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:57:33.804 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:57:34.720 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:57:35.652 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:57:36.568 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:57:37.486 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:57:38.404 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 14:57:38.784 [main] INFO  helper.LoggerHelper - 10
+2025-05-20 14:57:39.668 [main] INFO  helper.LoggerHelper - Decrement button is enabled
+2025-05-20 14:58:47.655 [main] INFO  helper.LoggerHelper - Decrement button is disabled
+2025-05-20 15:01:20.971 [main] INFO  helper.LoggerHelper - Decrement button is disabled
+2025-05-20 15:01:54.622 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:01:55.585 [main] INFO  helper.LoggerHelper - Decrement button is enabled
+2025-05-20 15:02:10.260 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:02:11.131 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:02:11.998 [main] INFO  helper.LoggerHelper - Decrement button is enabled
+2025-05-20 15:02:59.625 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:03:00.484 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:03:01.334 [main] INFO  helper.LoggerHelper - Decrement button is enabled
+2025-05-20 15:05:32.373 [main] INFO  helper.LoggerHelper - Decrement button is disabled
+2025-05-20 15:06:31.168 [main] ERROR helper.LoggerHelper - Can not interact with Decrement button
+2025-05-20 15:10:36.005 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:10:36.853 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:10:37.663 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:10:38.514 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:10:39.363 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:10:40.231 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:10:40.539 [main] INFO  helper.LoggerHelper - 6
+2025-05-20 15:10:41.342 [main] INFO  helper.LoggerHelper - Decrement button is enabled
+2025-05-20 15:12:19.812 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:12:20.650 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:12:21.517 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:12:22.368 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:12:23.217 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:12:23.542 [main] INFO  helper.LoggerHelper - 5
+2025-05-20 15:12:24.614 [main] INFO  helper.LoggerHelper - Decrement button is enabled
+2025-05-20 15:14:30.608 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:14:31.468 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:14:32.314 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:14:33.182 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:14:34.050 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:14:35.162 [main] INFO  helper.LoggerHelper - Decrement button is enabled
+2025-05-20 15:17:31.484 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:17:32.348 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:17:33.198 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:17:34.049 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:17:34.882 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:17:35.119 [main] INFO  helper.LoggerHelper - getTextFromField : 5
+2025-05-20 15:17:36.093 [main] INFO  helper.LoggerHelper - Decrement button is enabled
+2025-05-20 15:17:36.328 [main] INFO  helper.LoggerHelper - getTextFromField : 4
+2025-05-20 15:18:35.966 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:18:36.811 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:18:37.643 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:18:38.488 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:18:39.312 [main] INFO  helper.LoggerHelper - Increment button is enabled
+2025-05-20 15:18:39.547 [main] INFO  helper.LoggerHelper - getTextFromField AppiumBy.iOSNsPredicate: label MATCHES '[0-9]{1,2}' : 5
+2025-05-20 15:18:40.429 [main] INFO  helper.LoggerHelper - Decrement button is enabled
+2025-05-20 15:18:40.660 [main] INFO  helper.LoggerHelper - getTextFromField AppiumBy.iOSNsPredicate: label MATCHES '[0-9]{1,2}' : 4
